@@ -1,0 +1,14 @@
+Ldi r0,$0
+Ldi r1,$1
+Ldi r4,$8
+Mov r3,r1  
+Mov r2,r0  
+add r5,r3,r0
+Dec r4
+Mov r0,r3  
+Mov r3,r5  
+CMP r4,r2       
+BNE @5
+str r5,@1
+Ld r1,@1 
+end
